@@ -40,7 +40,7 @@ def SpamSelectedText():
         T += 1
 
 
-## Deffinition to spam from text file.
+## Finction to spam from text file.
 def SpamFromSelectedTextFile():
 
     ## Setting variables to global.
@@ -68,7 +68,7 @@ def SpamFromSelectedTextFile():
 
 
 
-        ## Deffinition to spam selected text.
+        ## Finction to spam selected text.
     def SpamSelectedText():
 
         ## Spam Delay in seconds.
@@ -92,14 +92,14 @@ def SpamFromSelectedTextFile():
             T += 1
 
 
-## Deffinition to start everything.
+## Finction to start everything.
 def StartEverything():
     global SpamDelay
 
     ## Asking to select spam mode.
     SpamMode = input("\nPlease select Numbers 1 = Spam Selected Text, are 2 = Spam From Txt File:\n >> ")
 
-    ## If user selects number 2 then running def SpamSelectedText() Deffinition.
+    ## If user selects number 2 then running def SpamSelectedText() Finction.
     ## And setting some other variables.
     if SpamMode == "1":
 
@@ -113,7 +113,7 @@ def StartEverything():
         time.sleep(StartAfter)
         SpamSelectedText()
 
-    ## If user selects number 2 then running def def SpamFromSelectedTextFile() Deffinition.
+    ## If user selects number 2 then running def def SpamFromSelectedTextFile() Finction.
     ## And setting some other variables.
     elif SpamMode == "2":
 
@@ -142,7 +142,5 @@ OnExit = input("Do you want to spam again? Y/N\n >> ")
 
 if OnExit == "Y" or "y" or "Yes" or "yes":
     StartEverything()
-else:
-    exit
-
-
+else: exit()
+ 
